@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+header {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.searchBarRow {
+    padding: 15px;
+    gap: 15px;
+    background: red;
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+}
+
+.search {
+    display: grid;
+    align-items: center;
+    background: purple;
+}
+
+.bell {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    background: orange;
+}
+
+.userID {
+    display: grid;
+    align-items: center;
+    padding-left: 30px;
+    background: yellow;
+}
+
+.welcomeMsgRow {
+    padding: 15px;
+    gap: 15px;
+    background: green;
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+}
+
+.userImgLarge {
+    display: grid;
+    align-items: center;
+    background-color: peachpuff;
+}
+
+.userWelcome {
+    display: grid;
+    align-items: center;
+    background-color: aqua;
+}
+
+.userActionBtns {
+    display: grid;
+    align-items: center;
+    background-color: deeppink;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.userActionBtns div {
+    background: dodgerblue;
+    display: grid;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+nav {
+    padding: 15px;
+    background-color: dodgerblue;
+    grid-area: 1/1/3/2;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr ;
+}
+
+main {
+    padding: 15px;
+    background-color:lightgray;
+}
