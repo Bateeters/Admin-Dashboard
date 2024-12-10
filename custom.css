@@ -1,4 +1,5 @@
 body {
+    background: lightgray;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -6,38 +7,53 @@ body {
 .mainGrid {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 175px 4fr;
 }
 
 header {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 0px 0px 10px 0px #888888;
+    z-index: 1;
+    background: white;
 }
 
 .searchBarRow {
-    padding: 15px;
+    padding: 25px 15px 15px 15px;
     gap: 15px;
-    background: red;
     display: grid;
     grid-template-columns: 5fr 1fr 2fr;
 }
 
 .search {
     display: grid;
+    grid-template-columns: 50px 4fr;
     align-items: center;
-    background: purple;
+}
+
+.search button {
+    margin-right: auto;
+    background: none;
+    border: none;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
 }
 
 .alertBtn {
     display: grid;
     align-items: center;
     justify-content: end;
-    background: orange;
 }
 
 .alertBtn button {
-    height: 100%;
-    border-radius: 40px;
+    border: none;
+    background: none;
 }
 
 .userID {
@@ -57,6 +73,10 @@ header {
     border-radius: 45px;
     height: 35px;
     width: 35px;
+}
+
+.userSmall p {
+    margin: 0;
 }
 
 .welcomeMsgRow {
@@ -82,7 +102,6 @@ header {
     display: grid;
     align-items: center;
     grid-template-rows: 1fr 1fr;
-    background-color: aqua;
 }
 
 .userWelcome > * {
@@ -105,14 +124,17 @@ header {
 }
 
 nav {
+    height: 100%;
     padding: 30px;
     background-color: dodgerblue;
     grid-area: 1/1/3/2;
-    height: 100vh;
-    display: grid;
     grid-template-rows: 1fr 5fr 3fr 2fr;
     display: grid;
     color: white;
+}
+
+nav > * {
+    position: fixed;
 }
 
 nav ul {
@@ -136,4 +158,69 @@ a {
 main {
     padding: 15px;
     background-color:lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+}
+
+.projectList h4 {
+    margin-bottom: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    gap: 10px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 0px #888888;
+}
+
+.projectContent {
+    display: grid;
+    margin: 5px;
+}
+
+.projectContent h5 {
+    margin: 15px 15px 5px 0;
+}
+
+.projectContent p {
+    margin: 0 15px 0 0;
+}
+
+.projectBtns {
+    margin: 15px 15px 15px auto;
+}
+
+.projectBtns button {
+    border: none;
+    background: none;
+}
+
+.stripe {
+    background: gold;
+}
+
+.secondaryMain {
+    background: azure;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.announcements {
+    background: cyan;
+}
+
+.trending {
+    background: midnightblue;
 }

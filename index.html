@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="mainGrid">
         <header>
             <div class="searchBarRow">
-                <div class="search">search icon & bar</div>
+                <div class="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
                 <div class="alertBtn">
-                    <button>Alerts</button>
+                    <button><i class="fa-solid fa-bell"></i></button>
                 </div>
                 <div class="userID">
                     <div class="userImgSmall">img</div>
@@ -36,7 +40,7 @@
         </header>
         <nav>
             <h2>Dashboard</h2>
-            <ul>
+            <ul style="top:13%;">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Messages</a></li>
@@ -44,13 +48,100 @@
                 <li><a href="#">Tasks</a></li>
                 <li><a href="#">Communities</a></li>
             </ul>
-            <ul>
+            <ul style="top:53%;">
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Privacy</a></li>
             </ul>
         </nav>
-        <main>Main Content</main>
+        <main>
+            <div class="projectList">
+                <h4>Your Projects</h4>
+                <div class="projects">
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Super Cool Project</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Not As Cool Project</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Easy-Peasy Application</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Impossible Application</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!
+                                <br><br>Why not try! There's a lot to do here and we currently don't have the man-power or software to allocate to this.</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Super Cool Project</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="project">
+                        <div class="stripe"></div>
+                        <div class="projectContent">
+                            <h5>Super Cool Project</h5>
+                            <p>The nitty-gritty details for the project. Describes what it is in a brief overview. Can't get too in depth in this tiny section!</p>
+                            <div class="projectBtns">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
+                        </div>
+                    </div>                                
+                </div>                 
+            </div>
+            <div class="secondaryMain">
+                <div class="announcements">
+                    <h4>Announcements</h4>
+                </div>
+                <div class="trending">
+                    <h4>Trending</h4>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
