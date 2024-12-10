@@ -10,10 +10,8 @@ body {
 }
 
 header {
-    padding: 15px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    grid-template-rows: 1fr 2fr;
 }
 
 .searchBarRow {
@@ -30,64 +28,109 @@ header {
     background: purple;
 }
 
-.bell {
+.alertBtn {
     display: grid;
     align-items: center;
     justify-content: end;
     background: orange;
 }
 
+.alertBtn button {
+    height: 100%;
+    border-radius: 40px;
+}
+
 .userID {
     display: grid;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
-    padding-left: 30px;
-    background: yellow;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.userImgSmall {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 189, 189);
+    border: 2px solid #5d5d5d;
+    border-radius: 45px;
+    height: 35px;
+    width: 35px;
 }
 
 .welcomeMsgRow {
     padding: 15px;
     gap: 15px;
-    background: green;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 5fr 4fr;
 }
 
 .userImgLarge {
     display: grid;
+    justify-content: center;
     align-items: center;
-    background-color: peachpuff;
+    background-color: rgb(189, 189, 189);
+    border: 2px solid #5d5d5d;
+    border-radius: 45px;
+    height: 65px;
+    width: 65px;
 }
 
 .userWelcome {
     display: grid;
     align-items: center;
+    grid-template-rows: 1fr 1fr;
     background-color: aqua;
+}
+
+.userWelcome > * {
+    margin: 0;
 }
 
 .userActionBtns {
     display: grid;
     align-items: center;
-    background-color: deeppink;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
 
-.userActionBtns div {
+.userActionBtns button {
     background: dodgerblue;
-    display: grid;
-    justify-content: center;
     color: white;
     border-radius: 20px;
+    border: none;
     padding: 7px;
 }
 
 nav {
-    padding: 15px;
+    padding: 30px;
     background-color: dodgerblue;
     grid-area: 1/1/3/2;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr 5fr 3fr 2fr;
+    display: grid;
+    color: white;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav a {
+    font-weight: 600;
+    line-height: 2.5em;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
